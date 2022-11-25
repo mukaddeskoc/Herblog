@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{%block body%}
+  {% if session["logged_in"] %}
+  <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">Python</h1>
+      <p class="lead my-3">Python, nesne yönelimli, yorumlamalı, birimsel (modüler) ve etkileşimli yüksek seviyeli bir programlama dilidir.</p>
+      <p class="lead mb-0"><a href="/article/1" class="text-dark fw-bold">Okumaya devam edin...</a></p>
+    </div>
+  </div>
+
+       {% else %}
+    <div class="px-4 py-5 my-5 text-center">    
+    <h1 class="display-5 fw-bold">Bir haber olmayın!</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Programlama dilleri,mühendislik alanları,teknolojik gelişmeler,sağlık,spor ve daha bir çok konuya dair tüm bilgi ve haberleri sizler için derliyoruz.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <a href="/register" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Üye ol</a>&nbsp;&nbsp;&nbsp;
+      <a href= "/login"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Giriş</button></a>
+    
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Haber</strong>
+          <h3 class="mb-0">BAYKAR'dan gururlandıran paylaşım</h3>
+          <div class="mb-1 text-muted">Kasım 18</div>
+          <p class="card-text mb-auto">BAYKAR tarafından yerli ve milli imkanlarla geliştirilen ve Türkiye'nin savunma sanayiine güç katan teknolojiler, dünya standartlarının üzerinde performans göstererek rakiplerini geride bırakıyor.</p>
+          <a href="/article/4" class="stretched-link">Okumaya devam edin...</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-warning">Bilim</strong>
+          <h3 class="mb-0">İngiltere'ye düşen göktaşı</h3>
+          <div class="mb-1 text-muted">Kasım 18</div>
+          <p class="mb-auto">Geçen yıl İngiltere’nin Cotswolds bölgesindeki Winchcombe kasabasına düşen bir göktaşı, Dünya'dakinin neredeyse aynı olan su içeriyordu.</p>
+          <a href="/article/5" class="stretched-link">Okumaya devam edin...</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Sağlık</strong>
+          <h3 class="mb-0">Diyabet nedir ve nasıl başa çıkılır?</h3>
+          <div class="mb-1 text-muted">Kasım 18</div>
+          <p class="card-text mb-auto">Her yıl bir milyondan fazla kişi diyabet nedeniyle hayatını kaybediyor. Hastalığın risklerine rağmen insanların yarısı diyabetli olduğundan haberdar değil.</p>
+          <a href="/article/6" class="stretched-link">Okumaya devam edin...</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-danger">Spor</strong>
+          <h3 class="mb-0">Lionel Messi Rekor Kırdı!</h3>
+          <div class="mb-1 text-muted">Kasım 18</div>
+          <p class="mb-auto">Suudi Arabistan, tarihi Arjantin zaferini kutluyor! Sürpriz hamle...</p>
+          <a href="/article/8" class="stretched-link">Okumaya devam edin...</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+{%endblock body%}
